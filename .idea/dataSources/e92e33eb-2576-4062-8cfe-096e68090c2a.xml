@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="MySQL - spambot@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+    <schema id="1" name="spambot">
+      <visible>1</visible>
+    </schema>
+    <schema id="2" name="bank"/>
+    <schema id="3" name="book"/>
+    <schema id="4" name="business"/>
+    <schema id="5" name="comicat"/>
+    <schema id="6" name="information_schema"/>
+    <schema id="7" name="javadev1900"/>
+    <schema id="8" name="kitchen"/>
+    <schema id="9" name="logos"/>
+    <schema id="10" name="miss"/>
+    <schema id="11" name="missprinces"/>
+    <schema id="12" name="myshop"/>
+    <schema id="13" name="mysql"/>
+    <schema id="14" name="performance_schema"/>
+    <schema id="15" name="pizza"/>
+    <schema id="16" name="purse"/>
+    <schema id="17" name="shop"/>
+    <schema id="18" name="shop2"/>
+    <schema id="19" name="shop25"/>
+    <schema id="20" name="shop26"/>
+    <schema id="21" name="shop27"/>
+    <schema id="22" name="shop28"/>
+    <schema id="23" name="shop3"/>
+    <schema id="24" name="shopuser"/>
+    <schema id="25" name="sys"/>
+    <schema id="26" name="trialshop"/>
+    <schema id="27" name="world"/>
+    <table id="28" parent="1" name="accounts"/>
+    <table id="29" parent="1" name="subject"/>
+    <column id="30" parent="28" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="31" parent="28" name="email">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <column id="32" parent="28" name="password">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="33" parent="28" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+    <column id="34" parent="29" name="id">
+      <mandatory>1</mandatory>
+      <data-type>int(11)|0</data-type>
+      <sequence-identity>1</sequence-identity>
+    </column>
+    <column id="35" parent="29" name="text">
+      <data-type>varchar(255)|0</data-type>
+    </column>
+    <key id="36" parent="29" name="PRIMARY">
+      <columns>id</columns>
+      <primary>1</primary>
+    </key>
+  </database-model>
+</dataSource>
